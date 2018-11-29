@@ -1,0 +1,103 @@
+<HTML>
+   <HEAD>
+      <style>
+          ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+          }
+          
+          li {
+              float: left;
+          }
+          
+          li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+          }
+          
+          li a:hover:not(.active) {
+              background-color: #111;
+          }
+          
+          .active {
+              background-color:darkgrey;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <ul>
+            <li><a class="active" href="/">Home</a></li>
+         
+          </ul>
+
+
+      <TITLE>NINJA CHAT MESSENGER</TITLE>
+   </HEAD>
+
+   <BODY>
+     
+     <style type="text/css"> 
+#mydiv {
+   position:absolute;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -19em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+</style>
+
+
+<div align="center" id="mydiv">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="/styles.css" rel="stylesheet" />
+<!--script type="text/javascript">
+ $(document).ready(function () {
+			
+		 $('#fblogin').click(function(){
+			
+			$.ajax({
+				url: "/login/facebook",
+				headers: {"X-Requested-With" : "XMLHttpRequest"}
+});
+$.ajax({
+  url: "/login/facebook",
+  cache: false,
+  success: function(html){
+    window.location//$("#results").append(html);
+  }
+});
+    });
+	});
+</script-->
+<div>
+ <img src="Chat-App-Logo.png"></div>
+
+<!--p>
+    <a id="fblogin" href='/auth/facebook'><img src="fb_logo.png" border="0" height="50" width="200"/></a>
+</p>
+<p>
+<a id="gitlogin" href='/auth/github'><img src="github.png" border="0" height="50" width="200"/></a>
+</p-->
+<p>
+<a id="gitlogin" href='/auth/google'><img src="google.png" border="0" height="50" width="200"/></a>
+</p>
+</div>   
+
+</BODY>
+</HTML>

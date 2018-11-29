@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="chat.js"></script>
+		<script src="utility.js"></script>
+        <link href="/styles.css" rel="stylesheet" />
+		<style>
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #4267b2;
+			}
+
+			li {
+				float: left;
+				width:30%
+			}
+			
+            li h1{
+				text-align: left;
+			}
+			li p{
+				align: right;
+			}			
+		</style>
+    </head>
+    <body>
+	<ul>
+	  <li><img src="Chat-App-Logo.png" width="30%" height="30%"/></li>
+	  <li><h1 style="color:#fff;">Welcome to Chat App</h1></li>
+	  <li><p id="welcomeMessage"></p></li>
+	  <li>
+			<a href="/">
+				<img src="logout.png" width="30" height="20">
+				</a>
+
+
+	  </li>
+	</ul>
+	
+	<input type="hidden" id="loggedInUser" name="loggedInUser" />
+	<input type="hidden" name="userId" />
+	
+	<div border="1">
+	<table width="100%">
+	<tr>
+	<td style="width:150px; height: 20px">
+	<table id="roomsTable" width="70%" class="hipchat" border=1>
+	<tr>
+	<th><span></span>&nbsp;ROOMS</th>
+	</tr>
+	</table>
+	</td>
+	<td rowspan="2" style="width:200px; height: 500px">
+	<h2 align="center">Chat Room<h2/>
+	 <div id="mainchatplaceholder">
+          		
+    </div>
+	</td>
+	<!--td style="width: 140px; height: 50px">
+	
+	      <h2> Room Members</h2>
+           <table id="roomMembersTable" width="70%" class="hipchat" border=1>
+				
+			</table>
+		</td>
+     
+	</td-->
+	<td style="width: 200px; height: 50px">
+	<div id="waitingmsg"><h2>Waiting for users to login...</h2></div>
+	<div id="availableUsersMsgDiv"><h2>&nbsp;Available Users</h2></div>
+	<table id="usersTable" width="70%" class="onechat" border=1>
+	<!--tr>
+	<th><span></span>&nbsp;Available Users</th>
+	</tr-->
+	</table></td>
+	</tr>
+	<tr>
+	
+	</tr>	
+	
+	</table>
+	</div>
+	 
+	<div id="dialogplaceholder">
+	</div>
+	
+    </body>
+   
+</html>
